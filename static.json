@@ -1,4 +1,4 @@
 {
-    "root": "build/",
+    "root": "public/",
     "https_only": true
   }
