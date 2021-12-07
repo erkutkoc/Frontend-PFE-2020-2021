@@ -1,6 +1,10 @@
 {
     "name": "frontend",
     "version": "0.0.1",
+    "engines": {    
+        "node": "16.0.0",
+        "npm": "8.1"
+    },
     "scripts": {
         "start": "npm run-script build",
         "dev": "concurrently \"yarn run dev:only -p 5000\" \"yarn run tailwind:watch\"",
