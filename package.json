@@ -5,8 +5,8 @@
     "node": "14.15"
   },
   "scripts": {
-   "dev": "concurrently \"yarn run dev:only -p 5000\" \"yarn run tailwind:watch\"",
-    "build": "yarn run tailwind:build && yarn run build:only",
+    "dev": "concurrently \"yarn run dev:only -p 5000\" \"yarn run tailwind:watch\"",
+    "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
