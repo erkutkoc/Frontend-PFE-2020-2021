@@ -2,11 +2,12 @@
     "name": "routify-starter",
     "private": true,
     "scripts": {
+        "start" : "node build",
         "dev": "run-p dev:*",
         "dev:routify": "routify",
         "dev:vite": "vite",
         "preview": "vite preview",
-        "build": "svelte-kit build && node create-build-package.mjs && rm -rf build/prerendered/api",
+        "build": "run-s build:*",
         "build:routify": "routify -b",
         "build:vite": "vite build"
     },
